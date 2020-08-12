@@ -1,0 +1,12 @@
+name: Matt Heslington
+bio: |
+  Written by Matt. This is where Matt's author bio lives. Share his work, your
+  joys and of course, your Twitter handle.
+avatar: ./avatars/matt-heslington.jpg
+social:
+  - url: https://unsplash.com
+  - url: https://stackoverflow.com
+  - url: https://github.com
+  - url: https://github.com
+  - url: https://github.com
+featured: true

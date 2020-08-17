@@ -55,66 +55,15 @@ export default {
             of: [{ type: 'string' }]
         },
         {
-            title: 'Main Image',
-            name: 'mainImage',
-            type: 'image',
-            options: {
-                hotspot: true, // <-- Defaults to false
-                metadata: ['lqip', 'palette']
-            },
-            fields: [
-                {
-                    title: 'Caption',
-                    name: 'caption',
-                    type: 'string',
-                    options: {
-                        isHighlighted: true // <-- make this field easily accessible
-                    }
-                },
-                {
-                    title: 'Alternative text',
-                    name: 'alt',
-                    type: 'string',
-                    description: 'Important for SEO and accessiblity.',
-                    options: {
-                        isHighlighted: true
-                    }
-                },
-            ]
+            title: "Main Image",
+            name: "mainImage",
+            type: "mainImage",
         },
         {
-            name: 'imageArray',
-            type: 'array',
-            description: 'First image in list is used as main image',
-            title: 'More Images',
-            of: [
-                {
-                    type: 'image',
-                    options: {
-                        metadata: ['lqip', 'palette']
-                    },
-                    fields: [
-                        {
-                            title: 'Caption',
-                            name: 'caption',
-                            type: 'string',
-                            options: {
-                                isHighlighted: true // <-- make this field easily accessible
-                            }
-                        },
-                        {
-                            title: 'Alternative text',
-                            name: 'alt',
-                            type: 'string',
-                            description: 'Important for SEO and accessiblity.',
-                            options: {
-                                isHighlighted: true
-                            }
-                        },
-                    ]
-
-                },
-            ]
+            title: "Other Images",
+            name: "imageArray",
+            type: "array",
+            of: [{ type: 'imageArray' }],
         },
         {
             title: 'Facilities',

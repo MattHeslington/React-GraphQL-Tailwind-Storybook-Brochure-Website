@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 import Star from 'components/site/Star'
 
-export class Card extends Component {
+export class CardDynamic extends Component {
     render() {
         return (
             <article className="mt-8 w-80">
-                <Link to={"/villa"}>
-                    <div className="relative bg-black rounded-lg pb-5/6">
-                        <img className="absolute inset-0 object-cover h-64 h-full transition-opacity duration-500 rounded-lg pic hover:opacity-85" src={this.props.url} alt="Alt"></img>
+                <Link to={this.props.slug}>
+                    <div className="relative rounded-lg pb-5/6" style={{ backgroundImage:this.props.imgBg }}>
+                        <img className="absolute inset-0 object-cover h-64 h-full transition-opacity duration-500 rounded-lg hover:opacity-90" src={this.props.imgUrl} alt="Alt"></img>
                         {/*<div className="absolute top-0 left-0 mt-32 ml-1">
                             <span className="flex items-center justify-center p-1 bg-gray-300 rounded-full">
                                 <svg className="w-3 h-3" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
@@ -53,7 +53,7 @@ export class Card extends Component {
 
                         <div className="flex justify-between mt-2">
                             <div>
-                                <p className="text-sm">{this.props.bedrooms} Beds | {this.props.bathrooms} Baths</p>
+                                <p className="text-sm">{this.props.beds} Beds | {this.props.baths} Baths</p>
                             </div>
 
                             <div>
@@ -67,4 +67,4 @@ export class Card extends Component {
     }
 }
 
-export default Card
+export default CardDynamic

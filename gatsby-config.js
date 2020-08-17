@@ -58,6 +58,12 @@ module.exports = {
                 authorsPage: true
             },
         },
-
+        {
+            resolve: `gatsby-source-sanity`,
+            options: {
+                projectId: `u5b8gm2k`,
+                dataset: `production`,
+            },
+        }
     ]
 }

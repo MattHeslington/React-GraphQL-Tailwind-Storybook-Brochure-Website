@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 export default function Filters() {
     return (
-        <div className="flex items-center w-full h-16 mt-8 border border-gray-200 rounded-lg shadow-md">
+        <div className="flex items-center w-full h-16 mt-8 mb-8 border border-gray-200 rounded-lg shadow-md">
 
             <FilterButton heading="Locations" secondary="Where would you like to stay?"/>
 
@@ -19,7 +19,7 @@ export default function Filters() {
                     <button className="h-10 px-20 text-white rounded bg-uvPink hover:bg-uvPinkHover">Search</button>
                 </Link>
             </div>
-            
+
         </div>
     )
 }

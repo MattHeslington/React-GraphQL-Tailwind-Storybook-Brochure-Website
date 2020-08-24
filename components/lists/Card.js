@@ -6,7 +6,7 @@ import Star from 'components/site/Star'
 export class Card extends Component {
     render() {
         return (
-            <article className="mt-8 w-80">
+            <article className="mt-8 w-76">
                 <Link to={"/villa"}>
                     <div className="relative bg-black rounded-lg pb-5/6">
                         <img className="absolute inset-0 object-cover h-64 h-full transition-opacity duration-500 rounded-lg pic hover:opacity-85" src={this.props.url} alt="Alt"></img>

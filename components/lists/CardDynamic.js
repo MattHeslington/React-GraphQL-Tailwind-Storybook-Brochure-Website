@@ -6,7 +6,7 @@ import Star from 'components/site/Star'
 export class CardDynamic extends Component {
     render() {
         return (
-            <article className="mt-8 w-80">
+            <article className="">
                 <Link to={this.props.slug}>
                     <div className="relative rounded-lg pb-5/6" style={{ backgroundImage:this.props.imgBg }}>
                         <img className="absolute inset-0 object-cover h-64 h-full transition-opacity duration-500 rounded-lg hover:opacity-90" src={this.props.imgUrl} alt="Alt"></img>
@@ -49,7 +49,7 @@ export class CardDynamic extends Component {
 
                         <h2 className="mt-1 text-base font-semibold text-uvBlack">{this.props.name}</h2>
 
-                        <p className="mt-1 text-base leading-tight text-gray-600">{this.props.headline}</p>
+                        <p className="mt-1 text-sm leading-tight text-gray-600">{this.props.headline}</p>
 
                         <div className="flex justify-between mt-2">
                             <div>

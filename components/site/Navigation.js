@@ -8,8 +8,8 @@ import AccountButton from 'components/site/AccountButton'
 
 export default function Navigation() {
     return (
-        <header className="items-center sm:flex sm:justify-between">
-            
+        <header className="items-center py-3 sm:flex sm:justify-between">
+
             <div className="flex justify-between px-4 py-3 xl:w-72 xl:bg-white xl:justify-left xl:py-3">{/*Logo and Hamburger on Smallest*/}
                 <div>{/*Logo*/}
                     <Logo/>

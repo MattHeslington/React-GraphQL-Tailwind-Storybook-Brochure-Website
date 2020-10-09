@@ -5,6 +5,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import clientConfig from '../../client-config'
 
 import LayoutSearch from "components/layouts/LayoutSearch"
+import CardHorizontal from "components/lists/CardHorizontal"
 
 
 
@@ -25,11 +26,12 @@ export default () => {
     return(
         <LayoutSearch>
             <div className="flex h-full">
-                <div className="w-1/2">
+                <div className="w-1/2 px-4">
                     <header className="">
                         <span className="text-xs">300+ Villas, Sep 24 to Sep 31, 2 Bedrooms</span>
-                        <h2 className="text-4xl font-extrabold tracking-tight">Villas in Phuket</h2>
+                        <h2 className="mb-6 text-4xl font-extrabold tracking-tight">Villas in Phuket</h2>
                     </header>
+                    <CardHorizontal/>
                 </div>
                 <div className="w-1/2">
                     <ReactMapGL
